@@ -22,6 +22,8 @@ import java.sql.Timestamp;
 public class Detail extends AbsNameEntity {
 
     //kimga tegishli ekanligi
+    @ManyToOne
+    private User user;
 
     @ManyToOne
     @JoinColumn(name = "ord_id")

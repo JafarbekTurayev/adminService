@@ -19,6 +19,8 @@ import java.sql.Timestamp;
 @SQLDelete(sql = "update category set deleted=true,status=false where id=?")
 public class Notification extends AbsNameEntity {
 
+    @ManyToOne
+    private User user;
     private String title;
     private String body;
     private String attachment; //attachment

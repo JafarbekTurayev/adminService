@@ -9,7 +9,6 @@ import org.hibernate.annotations.Where;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.Enumerated;
-import javax.persistence.ManyToOne;
 import java.util.List;
 
 @Entity

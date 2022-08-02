@@ -24,4 +24,6 @@ public class Product extends AbsNameEntity {
     private Double price;
     private String description;
     //chegirma
+    @ManyToOne
+    private Discount discount;
 }

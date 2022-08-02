@@ -7,10 +7,7 @@ import lombok.*;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.Where;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.List;
 
@@ -25,6 +22,8 @@ import java.util.List;
 public class Order extends AbsEntity {
 
     //kimga tegishli ekani qo'shish kk
+    @ManyToOne
+    private User user;
 
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
@@ -33,4 +32,5 @@ public class Order extends AbsEntity {
     private List<Detail> detailList;
 
     //summa
+    private Double summa;
 }

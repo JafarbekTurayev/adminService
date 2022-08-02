@@ -5,10 +5,7 @@ import lombok.*;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.Where;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -27,7 +24,6 @@ public class Filial extends AbsNameEntity {
     @Temporal(TemporalType.TIME)
     private Date endTime;
 
-    private String orienter;
-    private Double lat;
-    private Double lon;
+    @OneToOne
+    private Address address;
 }
