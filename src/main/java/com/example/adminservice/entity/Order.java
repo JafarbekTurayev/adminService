@@ -28,7 +28,7 @@ public class Order extends AbsEntity {
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
 
-    @OneToMany(mappedBy = "detail")
+    @OneToMany(mappedBy = "order")
     private List<Detail> detailList;
 
     //summa

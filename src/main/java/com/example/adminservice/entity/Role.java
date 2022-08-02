@@ -11,7 +11,7 @@ import javax.persistence.Entity;
 import javax.persistence.Enumerated;
 import java.util.List;
 
-@Entity
+@Entity(name = "roles")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
