@@ -1,0 +1,9 @@
+
+###
+POST http://localhost:8081/category
+Content-Type: application/json
+
+{
+  "nameUz": "Oziq ovqat",
+  "nameRu": "Oziq ovqat"
+}
